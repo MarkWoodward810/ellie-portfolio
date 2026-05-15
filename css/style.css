@@ -375,6 +375,19 @@ h1, h2, h3, h4, h5, h6 {
 #fh5co-product-section, .about-section {
   padding-bottom: 8em;
 }
+
+.modal-body .about-section {
+  padding-bottom: 0em;
+}
+
+.modal-body .about-section {
+  padding-top: 0.5em;
+}
+
+.modal-header {
+    padding-bottom: 1.3em;
+}
+
 @media screen and (max-width: 992px) {
   #fh5co-media-section, #fh5co-intro-section, #fh5co-contact-section,
   #fh5co-product-section, .about-section {
@@ -570,6 +583,12 @@ ba
   float: right;
   padding-left: 40px;
 }
+.about-section img.display-right,
+.about-section img.display-left {
+  max-width: 300px;
+  height: auto;
+}
+
 @media screen and (max-width: 768px) {
   .about-section img.display-right {
     float: left;
@@ -826,6 +845,12 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0;
+}
+
+#fh5co-product-section .product-inner img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
