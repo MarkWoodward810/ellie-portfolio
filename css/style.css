@@ -12,7 +12,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Playfair Display", serif;
   line-height: 1.8;
   font-size: 20px;
   background: #f9f7f7;
@@ -20,14 +20,14 @@ body {
 }
 
 a {
-  color: #a980cd;
+  color: #00bcd4;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover {
   text-decoration: underline !important;
-  color: #a980cd !important;
+  color: #00bcd4 !important;
 }
 a:focus, a:active {
   outline: none;
@@ -38,12 +38,12 @@ p {
   font-size: 20px;
   color: #727272;
   font-weight: 300;
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
   color: rgba(0, 0, 0, 0.8);
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Playfair Display", serif;
   font-weight: 400;
   margin: 0 0 30px 0;
 }
@@ -138,7 +138,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 0;
 }
 #fh5co-header .nav li a {
-  font-family: "Open Sans", Arial, serif;
+  font-family: "Playfair Display", serif;
   color: rgba(0, 0, 0, 0.4);
   position: relative;
   font-weight: 400;
@@ -158,7 +158,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 #fh5co-header .nav li.active a {
-  color: #a980cd;
+  color: #00bcd4;
   background: transparent;
   position: relative;
 }
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
   -ms-border-radius: 50%;
   border-radius: 50%;
   top: -20px;
-  background: #a980cd;
+  background: #00bcd4;
   content: '';
   left: 50%;
   margin-left: -4px;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6 {
 @media screen and (max-width: 480px) {
   #fh5co-header .nav li.active a {
     border-bottom: 2px solid transparent;
-    color: #a980cd;
+    color: #00bcd4;
   }
 }
 @media screen and (max-width: 992px) {
@@ -566,7 +566,7 @@ ba
 .fh5co-inner .holder-section h3 {
   font-size: 20px;
   text-transform: uppercase;
-  color: #a980cd;
+  color: #00bcd4;
   letter-spacing: 1px;
   font-weight: bold;
 }
@@ -697,7 +697,7 @@ ba
 }
 .contact-info li a {
   font-weight: 400 !important;
-  color: #a980cd;
+  color: #00bcd4;
 }
 @media screen and (max-width: 768px) {
   .contact-info {
@@ -772,7 +772,7 @@ input[type="text"] {
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
-  color: #a980cd;
+  color: #00bcd4;
 }
 .page1-heading-section h3 {
   font-size: 20px;
@@ -780,7 +780,7 @@ input[type="text"] {
   letter-spacing: 2px;
   text-transform: uppercase;
   position: relative;
-  color: #a980cd;
+  color: #00bcd4;
 }
 
 .btn {
@@ -797,14 +797,14 @@ input[type="text"] {
   transition: 0.3s;
 }
 .btn.btn-primary {
-  background: #a980cd;
+  background: #00bcd4;
   color: #fff;
   border: none !important;
   border: 2px solid transparent !important;
 }
 .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
   box-shadow: none;
-  background: #a980cd;
+  background: #00bcd4;
 }
 .btn:hover, .btn:active, .btn:focus {
   background: #393e46 !important;
@@ -841,7 +841,7 @@ input[type="text"] {
   transition: 0.5s;
 }
 .social li a:hover, .social li a:focus {
-  color: #a980cd;
+  color: #00bcd4;
   text-decoration: none;
 }
 .social li a i {
@@ -867,6 +867,8 @@ input[type="text"] {
 .project-image {
     position: relative;
     overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .project-image img {
@@ -880,7 +882,7 @@ input[type="text"] {
     left: 50%;
     transform: translate(-50%, -50%);
 
-    color: rgba(255,255,255,0.45);
+    color: rgba(255,255,255,0.8);
     font-size: 3.5vw;
     font-weight: 700;
     letter-spacing: 4px;
@@ -909,6 +911,12 @@ input[type="text"] {
     padding: 3px 0;
     font-size: 18px;
     color: #727272;
+    font-family: "Inter", sans-serif;
+}
+
+.cast-creatives-row {
+    clear: both;
+    padding-top: 25px;
 }
 
 blockquote {
@@ -920,6 +928,7 @@ blockquote {
   list-style: none;
   padding-left: 0;
   margin-left: 0;
+  font-family: "Inter", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
