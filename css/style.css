@@ -250,8 +250,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .owl-carousel .owl-controls .owl-nav .owl-next,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next {
-  right: 40px;
+  right: 0px;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-next:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-next:hover {
   margin-right: -10px;
@@ -259,8 +260,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .owl-carousel .owl-controls .owl-nav .owl-prev,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev {
-  left: 40px;
+  left: 0px;
 }
+
 .owl-carousel .owl-controls .owl-nav .owl-prev:hover,
 .owl-carousel-posts .owl-controls .owl-nav .owl-prev:hover {
   margin-left: -10px;
@@ -300,7 +302,7 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next i,
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev i {
   font-size: 50px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
 }
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel-fullwidth.fh5co-light-arrow .owl-controls .owl-nav .owl-prev:hover i {
@@ -310,11 +312,11 @@ h1, h2, h3, h4, h5, h6 {
 .owl-carousel2 .owl-controls .owl-nav .owl-next i,
 .owl-carousel2 .owl-controls .owl-nav .owl-prev i {
   font-size: 50px;
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.7);
 }
 .owl-carousel2 .owl-controls .owl-nav .owl-next:hover i,
 .owl-carousel2 .owl-controls .owl-nav .owl-prev:hover i {
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 .owl-carousel2 .owl-controls .owl-nav .owl-next {
@@ -619,22 +621,6 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
-  .about-section img.display-left,
-  .about-section img.display-right,
-  .about-section img.display-ellie,
-  .about-section img.display-left-narrow {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 0 20px 0;
-  }
-}
-
 .about-section img.display-ellie {
   float: right;
   padding-left: 40px;
@@ -647,11 +633,26 @@ h1, h2, h3, h4, h5, h6 {
 .about-section img.display-left-narrow {
   float: left;
   padding-right: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 30px;
   max-width: 400px;
   min-width: 200px;
   width: 40%;
   height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section img.display-left,
+  .about-section img.display-right,
+  .about-section img.display-left-narrow {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 0 20px 0;
+  }
 }
 
 /* @media screen and (max-width: 768px) {
@@ -989,6 +990,12 @@ blockquote {
 
 hr {
     clear: both;
+}
+
+@media (max-width: 768px) {
+  #fh5co-intro-section h3 {
+    display: none;
+  }
 }
 
 /* .modal-content {
