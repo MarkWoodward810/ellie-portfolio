@@ -208,8 +208,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .owl-carousel1 .item {
-  height: clamp(300px, 40vw, 700px);      /* set your max height */
+  position: relative;
+  height: clamp(300px, 40vw, 700px);
   overflow: hidden;
+}
+
+.owl-carousel1 .item .img-wrap {
+  height: 100%;
+  margin: 0;
 }
 
 .owl-carousel1 .item img {
@@ -218,6 +224,23 @@ h1, h2, h3, h4, h5, h6 {
   object-fit: cover;
   object-position: center;
   display: block;
+}
+
+/* disable old overlay inside carousel */
+.owl-carousel1 .item .img-wrap::after {
+  display: none;
+}
+
+/* create new overlay on visible frame */
+.owl-carousel1 .item::after {
+  content: attr(data-credit);
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 12px;
+  color: #fff;
+  pointer-events: none;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
 }
 
 .modal .owl-carousel {
@@ -414,6 +437,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#fh5co-media-section .page1-heading-section h4 {
+  color: #f9f7f7;
+}
+
 #fh5co-intro-section h2 {
   font-size: 40px;
   text-transform: uppercase;
@@ -426,11 +453,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 38px;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   #fh5co-intro-section h3 {
     display: none;
   }
-}
+} */
 
 .section-overlay {
   margin-bottom: 5em;
