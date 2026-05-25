@@ -5,12 +5,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*	Edit this section
-*
-* ======================================================= */
+
 body {
   font-family: "Playfair Display", serif;
   line-height: 1.8;
@@ -226,12 +221,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
 }
 
-/* disable old overlay inside carousel */
 .owl-carousel1 .item .img-wrap::after {
   display: none;
 }
 
-/* create new overlay on visible frame */
 .owl-carousel1 .item::after {
   content: attr(data-credit);
   position: absolute;
@@ -247,7 +240,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 1em;
 }
 
-/* Owl Override Style */
 .owl-carousel .owl-controls,
 .owl-carousel-posts .owl-controls {
   margin-top: 0;
@@ -396,6 +388,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 768px) {
+  .owl-carousel-fullwidth.owl-theme .owl-dots {
+    margin-bottom: 15px;
+  }
+}
+
 .owl-theme .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
@@ -411,6 +409,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   background: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  .owl-theme .owl-dots .owl-dot span {
+    width: 6px;
+    height: 6px;
+    margin: 3px 4px;
+  }
 }
 
 #fh5co-media-section, #fh5co-intro-section, #fh5co-contact-section,
@@ -950,97 +956,6 @@ hr {
     clear: both;
 }
 
-/* .about-section img.display-left {
-  float: left;
-  padding-right: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.about-section img.display-right {
-  float: right;
-  padding-left: 40px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.about-section img.display-right,
-.about-section img.display-left {
-  max-width: 600px;
-  min-width: 250px;
-  width: 50%;
-  height: auto;
-}
-
-.about-section img.display-left-narrow {
-  float: left;
-  padding-right: 40px;
-  padding-bottom: 30px;
-  max-width: 400px;
-  min-width: 200px;
-  width: 40%;
-  height: auto;
-}
-
-@media screen and (max-width: 768px) {
-  .about-section img.display-left,
-  .about-section img.display-right,
-  .about-section img.display-left-narrow {
-    float: none;
-    width: 100%;
-    max-width: 100%;
-    min-width: 0;
-    display: block;
-    padding-left: 0;
-    padding-right: 0;
-    margin: 0 0 20px 0;
-  }
-}
-
-.img-wrap {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.img-wrap img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.about-section .img-wrap.display-left {
-  width: 50%;
-  float: left;
-}
-
-.about-section .img-wrap.display-right {
-  width: 50%;
-  float: right;
-}
-
-.img-wrap::after {
-  content: "Photo Credit: " attr(data-credit);
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  font-size: 12px;
-  color: #fff;
-  background: rgba(0,0,0,0);
-  padding: 3px 6px;
-  border-radius: 3px;
-}
-
-@media (max-width: 768px) {
-  .img-wrap::after {
-    font-size: 10px;
-    bottom: 5px;
-    right: 5px;
-  }
-} */
-
-/* =========================
-   BASE IMAGE WRAPPER
-   ========================= */
-
 .about-section img.display-ellie {
   float: right;
   padding-left: 40px;
@@ -1110,10 +1025,6 @@ hr {
   margin: 5px 0 20px 40px;
 }
 
-/* =========================
-   MOBILE (FULL WIDTH)
-   ========================= */
-
 @media screen and (max-width: 768px) {
   .img-wrap.display-left,
   .img-wrap.display-right {
@@ -1123,10 +1034,6 @@ hr {
     margin: 0 0 20px 0;
   }
 }
-
-/* =========================
-   PHOTO CREDIT
-   ========================= */
 
 .img-wrap::after {
   content: attr(data-credit);
@@ -1167,9 +1074,5 @@ hr {
     display: block;
     opacity: 0.5;
 }
-
-/* .modal-content {
-    background-color: #707070;
-} */
 
 /*# sourceMappingURL=style.css.map */
