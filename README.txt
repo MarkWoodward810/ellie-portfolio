@@ -1,4 +1,4 @@
-Welcome to my portfolio! Feel free to reach out if you think I could contribute to your projects.
+Welcome to my portfolio! If you have a project or collaboration in mind, I'd love to hear from you.
 
 
 Built from Narrow - Fully Responsive Free HTML5 template
